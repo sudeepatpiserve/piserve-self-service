@@ -1,0 +1,43 @@
+{
+  "generator-jhipster": {
+    "applicationType": "monolith",
+    "gitCompany": "",
+    "baseName": "piserveSelfService",
+    "packageName": "sudeep.piserve",
+    "packageFolder": "sudeep/piserve",
+    "serverPort": 8080,
+    "serviceDiscoveryType": false,
+    "authenticationType": "jwt",
+    "uaaBaseName": "../uaa",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "enableSwaggerCodegen": false,
+    "messageBroker": false,
+    "buildTool": "maven",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "testFrameworks": [],
+    "enableTranslation": false,
+    "nativeLanguage": "en",
+    "languages": [
+      "en"
+    ],
+    "clientFramework": "react",
+    "jhiPrefix": "jhi",
+    "jhipsterVersion": "6.2.0",
+    "jwtSecretKey": "MGUzZWU2OWI4NGNhYzM1ZWQ4YmRlMTY1NDA2YWNkZGQwZmM1YTc0ZDE3Y2VlODNhMGE4YTRlNWJmZTJlYTNhYjMwOWMxZWI2NWM0ZjNjNjgyMmRjNGNlY2EwNjczMTUxYmZmMzE0YzA3OTFhZWYwYzliNmI2MTI0Mjg3YzQwMmU=",
+    "clientTheme": "none",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "blueprints": []
+  },
+  "git-provider": "GitHub",
+  "git-company": "sudeepatpiserve",
+  "repository-name": "piserve-self-service"
+}
