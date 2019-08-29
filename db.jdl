@@ -1,0 +1,33 @@
+
+
+entity VmRequest{
+dc String,
+datastore String,
+cluster String,
+network String,
+template String
+}
+
+entity Vm{
+vmname String,
+numCPU Integer,
+memory String
+}
+
+relationship OneToMany {
+	Vm to VmRequest{Vm}
+
+}
+// Set pagination options
+paginate VmRequest with infinite-scroll
+paginate Vm with infinite-scroll
+
+
+// Use Data Transfert Objects (DTO)
+// dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl
+
+// Set an angular suffix
+// angularSuffix * with mySuffix

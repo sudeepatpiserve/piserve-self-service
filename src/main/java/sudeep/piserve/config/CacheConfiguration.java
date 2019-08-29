@@ -43,6 +43,9 @@ public class CacheConfiguration {
             createCache(cm, sudeep.piserve.domain.User.class.getName());
             createCache(cm, sudeep.piserve.domain.Authority.class.getName());
             createCache(cm, sudeep.piserve.domain.User.class.getName() + ".authorities");
+            createCache(cm, sudeep.piserve.domain.VmRequest.class.getName());
+            createCache(cm, sudeep.piserve.domain.Vm.class.getName());
+            createCache(cm, sudeep.piserve.domain.Vm.class.getName() + ".vmRequests");
             // jhipster-needle-ehcache-add-entry
         };
     }

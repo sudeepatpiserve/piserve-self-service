@@ -1,0 +1,43 @@
+{
+    "name": "VmRequest",
+    "fields": [
+        {
+            "fieldName": "dc",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "datastore",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "cluster",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "network",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "template",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "vm",
+            "otherEntityRelationshipName": "vmRequest",
+            "relationshipName": "vm",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190828112750",
+    "entityTableName": "vm_request",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

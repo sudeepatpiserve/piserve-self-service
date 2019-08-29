@@ -1,0 +1,34 @@
+{
+    "name": "Vm",
+    "fields": [
+        {
+            "fieldName": "vmname",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "numCPU",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "memory",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "vmRequest",
+            "otherEntityRelationshipName": "vm",
+            "relationshipName": "vmRequest"
+        }
+    ],
+    "changelogDate": "20190828112751",
+    "entityTableName": "vm",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}
